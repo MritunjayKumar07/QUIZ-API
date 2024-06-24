@@ -74,6 +74,492 @@
                   { "text": "short < sbyte < int < long", "isCorrect": false },
                   { "text": "short < int < sbyte < long", "isCorrect": false }
                 ]
+              },
+              {
+                "qid": "6",
+                "question": " Which data type should be more preferred for storing a simple number like 35 to improve execution speed of a program?",
+                "options": [
+                  { "text": "sbyte", "isCorrect": true },
+                  { "text": "short", "isCorrect": false },
+                  { "text": "int", "isCorrect": false },
+                  { "text": "long", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "7",
+                "question": "Which Conversion function of ‘Convert.ToInt32()’ and ‘Int32.Parse()’ is efficient?",
+                "code": "1> Int32.Parse() is only used for strings and throws argument exception for null string\n2) Convert.ToInt32() used for data types and returns directly '0' for null string",
+                "options": [
+                  { "text": "2", "isCorrect": true },
+                  { "text": "Both 1, 2", "isCorrect": false },
+                  { "text": "1", "isCorrect": false },
+                  { "text": "None of the mentioned", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "8",
+                "question": "Correct way to assign values to variable ‘c’ when int a=12, float b=3.5, int c;",
+                "options": [
+                  { "text": "c = a + b;", "isCorrect": false },
+                  { "text": "c = a + int(float(b));", "isCorrect": false },
+                  { "text": "c = a + convert.ToInt32(b);", "isCorrect": true },
+                  { "text": "c = int(a + b);", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "9",
+                "question": "What will be Correct Set of C# Code for given data ‘a’ and ‘b’ to print output for ‘c’ as 74?",
+                "options": [
+                  {
+                    "text": "int a = 12;\nfloat b = 6.2f;\nint c;\nc = a / b + a * b;\nConsole.WriteLine(c);",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "int a = 12;\nfloat b = 6.2f;\nint c;\nc = a / convert.ToInt32(b) + a * b;\nConsole.WriteLine(c);",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "int a = 12;\nfloat b = 6.2f;\nint c;\nc = a / convert.ToInt32(b) + a * convert.ToInt32(b);\nConsole.WriteLine(c);",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "int a = 12;\nfloat b = 6.2f;\nint c;\nc = convert.ToInt32(a / b + a * b);\nConsole.WriteLine(c);",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "qid": "10",
+                "question": "Does the output remain same or different for both cases?",
+                "code": "1> char l = 'k';\nfloat b = 19.0f;\nint c;\nc = (l / Convert.ToInt32(b));\nConsole.WriteLine(c);\n\n2> char l = 'k';\nfloat b = 19.0f;\nint c;\nc = Convert.ToInt32(l / b);\nConsole.WriteLine(c);\n",
+                "options": [
+                  { "text": "Yes", "isCorrect": false },
+                  { "text": "No", "isCorrect": true }
+                ]
+              },
+              {
+                "qid": "11",
+                "question": " Default Type of number without decimal is?",
+                "options": [
+                  { "text": "Long Int", "isCorrect": false },
+                  { "text": "Unsigned Long", "isCorrect": false },
+                  { "text": "Int", "isCorrect": true },
+                  { "text": "Unsigned Int", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "12",
+                "question": "What will be the output of the following C# code?",
+                "code": "static void Main(string[] args)\n{\nfloat a = 10.553f;\nlong b = 12L;\nint  c;\nc = Convert.ToInt32(a + b);\nConsole.WriteLine(c);\n}",
+                "options": [
+                  { "text": "23.453", "isCorrect": false },
+                  { "text": "22", "isCorrect": true },
+                  { "text": "23", "isCorrect": false },
+                  { "text": "22.453", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "13",
+                "question": "What is the size of the ‘int’ data type in C#?",
+                "options": [
+                  { "text": "1 byte", "isCorrect": false },
+                  { "text": "2 bytes", "isCorrect": false },
+                  { "text": "4 bytes", "isCorrect": true },
+                  { "text": "8 bytes", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "14",
+                "question": "Which data type is used for a variable that needs to store a value of 2^63 - 1?",
+                "options": [
+                  { "text": "byte", "isCorrect": false },
+                  { "text": "short", "isCorrect": false },
+                  { "text": "int", "isCorrect": false },
+                  { "text": "long", "isCorrect": true }
+                ]
+              },
+              {
+                "qid": "15",
+                "question": "What is the default value of an uninitialized integer variable in C#?",
+                "options": [
+                  { "text": "0", "isCorrect": true },
+                  { "text": "null", "isCorrect": false },
+                  { "text": "undefined", "isCorrect": false },
+                  { "text": "-1", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "16",
+                "question": "Which of the following data types cannot store negative values?",
+                "options": [
+                  { "text": "sbyte", "isCorrect": false },
+                  { "text": "int", "isCorrect": false },
+                  { "text": "uint", "isCorrect": true },
+                  { "text": "long", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "17",
+                "question": "What is the .NET class name for the 'int' data type?",
+                "options": [
+                  { "text": "System.Int16", "isCorrect": false },
+                  { "text": "System.Int32", "isCorrect": true },
+                  { "text": "System.Int64", "isCorrect": false },
+                  { "text": "System.Byte", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "18",
+                "question": "Which of the following correctly declares a 64-bit signed integer variable?",
+                "options": [
+                  { "text": "long a = 1234L;", "isCorrect": true },
+                  { "text": "int a = 1234L;", "isCorrect": false },
+                  { "text": "ulong a = 1234;", "isCorrect": false },
+                  { "text": "short a = 1234;", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "19",
+                "question": "How many bytes are stored by ‘short’ data type in C#?",
+                "options": [
+                  { "text": "1", "isCorrect": false },
+                  { "text": "2", "isCorrect": true },
+                  { "text": "4", "isCorrect": false },
+                  { "text": "8", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "20",
+                "question": "Which of the following is a 16-bit unsigned integer in C#?",
+                "options": [
+                  { "text": "int", "isCorrect": false },
+                  { "text": "ushort", "isCorrect": true },
+                  { "text": "long", "isCorrect": false },
+                  { "text": "byte", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "21",
+                "question": "What is the correct way to declare an unsigned 32-bit integer variable?",
+                "options": [
+                  { "text": "int a;", "isCorrect": false },
+                  { "text": "uint a;", "isCorrect": true },
+                  { "text": "ulong a;", "isCorrect": false },
+                  { "text": "short a;", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "22",
+                "question": "Which data type would you use to store the number 3000000000?",
+                "options": [
+                  { "text": "int", "isCorrect": false },
+                  { "text": "uint", "isCorrect": true },
+                  { "text": "long", "isCorrect": false },
+                  { "text": "short", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "23",
+                "question": "Which keyword is used to define a constant integer in C#?",
+                "options": [
+                  { "text": "readonly", "isCorrect": false },
+                  { "text": "static", "isCorrect": false },
+                  { "text": "const", "isCorrect": true },
+                  { "text": "final", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "24",
+                "question": "Which of the following data types has the smallest storage size?",
+                "options": [
+                  { "text": "sbyte", "isCorrect": true },
+                  { "text": "int", "isCorrect": false },
+                  { "text": "long", "isCorrect": false },
+                  { "text": "short", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "25",
+                "question": "Choose the correct option for casting a double to an integer in C#:",
+                "options": [
+                  { "text": "int a = (int) 12.34;", "isCorrect": true },
+                  { "text": "int a = int(12.34);", "isCorrect": false },
+                  { "text": "int a = (integer) 12.34;", "isCorrect": false },
+                  {
+                    "text": "int a = convert.ToInt32(12.34);",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "qid": "26",
+                "question": "Which of the following represents the largest value?",
+                "options": [
+                  { "text": "int.MaxValue", "isCorrect": false },
+                  { "text": "long.MaxValue", "isCorrect": true },
+                  { "text": "short.MaxValue", "isCorrect": false },
+                  { "text": "byte.MaxValue", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "27",
+                "question": "How do you specify a long integer literal in C#?",
+                "options": [
+                  { "text": "123L", "isCorrect": true },
+                  { "text": "123l", "isCorrect": true },
+                  { "text": "None of the above", "isCorrect": false },
+                  { "text": "Both a and b", "isCorrect": true }
+                ]
+              },
+              {
+                "qid": "28",
+                "question": "Which C# data type should be used to store the value -32768?",
+                "options": [
+                  { "text": "byte", "isCorrect": false },
+                  { "text": "ushort", "isCorrect": false },
+                  { "text": "short", "isCorrect": true },
+                  { "text": "ulong", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "29",
+                "question": "Choose the correct syntax to define a signed 8-bit integer:",
+                "options": [
+                  { "text": "byte a = 100;", "isCorrect": false },
+                  { "text": "int a = 100;", "isCorrect": false },
+                  { "text": "short a = 100;", "isCorrect": false },
+                  { "text": "sbyte a = 100;", "isCorrect": true }
+                ]
+              },
+              {
+                "qid": "30",
+                "question": "What is the result of the following C# expression: 5 + 10 * 3?",
+                "options": [
+                  { "text": "45", "isCorrect": false },
+                  { "text": "35", "isCorrect": false },
+                  { "text": "15", "isCorrect": false },
+                  { "text": "25", "isCorrect": true }
+                ]
+              },
+              {
+                "qid": "31",
+                "question": "Which of the following correctly assigns the maximum value of an integer to a variable?",
+                "options": [
+                  { "text": "int max = 2147483647;", "isCorrect": true },
+                  { "text": "int max = Int32.MaxValue;", "isCorrect": true },
+                  { "text": "int max = 0x7FFFFFFF;", "isCorrect": true },
+                  { "text": "All of the above", "isCorrect": true }
+                ]
+              },
+              {
+                "qid": "32",
+                "question": "Which of the following operations cannot be performed on an int type in C#?",
+                "options": [
+                  { "text": "Addition", "isCorrect": false },
+                  { "text": "Subtraction", "isCorrect": false },
+                  { "text": "Multiplication", "isCorrect": false },
+                  { "text": "String concatenation", "isCorrect": true }
+                ]
+              },
+              {
+                "qid": "33",
+                "question": "What keyword is used to specify a 32-bit unsigned integer in C#?",
+                "options": [
+                  { "text": "uint", "isCorrect": true },
+                  { "text": "ulong", "isCorrect": false },
+                  { "text": "ushort", "isCorrect": false },
+                  { "text": "int", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "34",
+                "question": "What is the default value of an int array element in C#?",
+                "options": [
+                  { "text": "0", "isCorrect": true },
+                  { "text": "null", "isCorrect": false },
+                  { "text": "undefined", "isCorrect": false },
+                  { "text": "-1", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "35",
+                "question": "Which of the following is not a valid integral type in C#?",
+                "options": [
+                  { "text": "byte", "isCorrect": false },
+                  { "text": "float", "isCorrect": true },
+                  { "text": "sbyte", "isCorrect": false },
+                  { "text": "ulong", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "36",
+                "question": "How do you declare a variable that can store a large positive number in C#?",
+                "options": [
+                  { "text": "int a = 2147483648;", "isCorrect": false },
+                  { "text": "uint a = 4294967295;", "isCorrect": false },
+                  {
+                    "text": "long a = 9223372036854775807;",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "ulong a = 18446744073709551615;",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "qid": "37",
+                "question": "What happens when an integer variable overflows in C#?",
+                "options": [
+                  { "text": "An exception is thrown", "isCorrect": false },
+                  {
+                    "text": "It wraps around to the minimum value",
+                    "isCorrect": true
+                  },
+                  { "text": "It becomes zero", "isCorrect": false },
+                  { "text": "It becomes null", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "38",
+                "question": "Which of the following is a valid hexadecimal integer literal?",
+                "options": [
+                  { "text": "0x123G", "isCorrect": false },
+                  { "text": "0x1A3F", "isCorrect": true },
+                  { "text": "123H", "isCorrect": false },
+                  { "text": "0xZZZ", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "39",
+                "question": "What is the correct way to declare a constant integer?",
+                "options": [
+                  { "text": "int const a = 10;", "isCorrect": false },
+                  { "text": "const int a = 10;", "isCorrect": true },
+                  { "text": "final int a = 10;", "isCorrect": false },
+                  { "text": "readonly int a = 10;", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "40",
+                "question": "Which of the following statements is true about the 'short' data type in C#?",
+                "options": [
+                  {
+                    "text": "It is a 32-bit signed integer",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "It is a 16-bit signed integer",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "It is a 64-bit signed integer",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "It is an 8-bit signed integer",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "qid": "41",
+                "question": "Which of the following is not a signed integer type?",
+                "options": [
+                  { "text": "int", "isCorrect": false },
+                  { "text": "uint", "isCorrect": true },
+                  { "text": "long", "isCorrect": false },
+                  { "text": "short", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "42",
+                "question": "What is the maximum value of a 32-bit signed integer?",
+                "options": [
+                  { "text": "2^16 - 1", "isCorrect": false },
+                  { "text": "2^31 - 1", "isCorrect": true },
+                  { "text": "2^32 - 1", "isCorrect": false },
+                  { "text": "2^64 - 1", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "43",
+                "question": "How do you convert a string to an integer in C#?",
+                "options": [
+                  { "text": "int a = \"123\";", "isCorrect": false },
+                  { "text": "int a = (int)\"123\";", "isCorrect": false },
+                  {
+                    "text": "int a = Convert.ToInt32(\"123\");",
+                    "isCorrect": true
+                  },
+                  { "text": "int a = Parse.Int(\"123\");", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "44",
+                "question": "Which of the following is a 64-bit signed integer type?",
+                "options": [
+                  { "text": "int", "isCorrect": false },
+                  { "text": "short", "isCorrect": false },
+                  { "text": "long", "isCorrect": true },
+                  { "text": "byte", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "45",
+                "question": "What is the correct way to declare a variable that cannot be changed after initialization?",
+                "options": [
+                  { "text": "readonly int a = 5;", "isCorrect": false },
+                  { "text": "const int a = 5;", "isCorrect": true },
+                  { "text": "final int a = 5;", "isCorrect": false },
+                  { "text": "static int a = 5;", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "46",
+                "question": "Which of the following operations will throw an exception if performed on integer variables?",
+                "options": [
+                  { "text": "Division by zero", "isCorrect": true },
+                  { "text": "Multiplication by zero", "isCorrect": false },
+                  {
+                    "text": "Subtraction resulting in a negative value",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Addition resulting in an overflow",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "qid": "47",
+                "question": "How do you declare a variable that can store only positive numbers?",
+                "options": [
+                  { "text": "int a;", "isCorrect": false },
+                  { "text": "short a;", "isCorrect": false },
+                  { "text": "uint a;", "isCorrect": true },
+                  { "text": "sbyte a;", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "48",
+                "question": "What will be the output of the following C# code?\n\nstatic void Main(string[] args)\n{\n    int a = 1;\n    for (int i = 0; i < 3; i++)\n    {\n        a *= 2;\n    }\n    Console.WriteLine(a);\n}",
+                "options": [
+                  { "text": "2", "isCorrect": false },
+                  { "text": "4", "isCorrect": false },
+                  { "text": "8", "isCorrect": true },
+                  { "text": "16", "isCorrect": false }
+                ]
+              },
+              {
+                "qid": "49",
+                "question": "Which of the following types can be implicitly converted to 'int'?",
+                "options": [
+                  { "text": "long", "isCorrect": true },
+                  { "text": "float", "isCorrect": false },
+                  { "text": "sbyte", "isCorrect": false },
+                  { "text": "double", "isCorrect": false }
+                ]
               }
             ]
           }
