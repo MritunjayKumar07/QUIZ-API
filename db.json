@@ -563,6 +563,55 @@
                 ]
               }
             ]
+          },
+          "Floating and Decimal Data Types": {
+            "id": "2",
+            "metadata": {
+              "topic": "Integer Data Types",
+              "totalQuestions": 2,
+              "launchedBy": "Professor Eleanor Mitchell",
+              "launchDate": "2024-06-23"
+            },
+            "questions": [
+              {
+                "qid": "1",
+                "question": " Select a convenient declaration and initialization of a floating point number:",
+                "options": [
+                  { "text": "float somevariable = 12.502D", "isCorrect": true },
+                  {
+                    "text": "float somevariable = (Double) 12.502D",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "float somevariable = (float) 12.502D",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": " float somevariable = (Decimal)12.502D",
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "qid": "2",
+                "question": "Number of digits upto which precision value of float data type is valid?",
+                "options": [
+                  { "text": "Upto 6 digit", "isCorrect": false },
+                  {
+                    "text": "Upto 8 digit",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Upto 9 digit",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Upto 7 digit",
+                    "isCorrect": true
+                  }
+                ]
+              }
+            ]
           }
         }
       },
